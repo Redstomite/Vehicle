@@ -8,7 +8,7 @@ class Bike(Vehicle):
 	def __init__(self, handle, is_gear, name, wheels, speed, weight, mileage, color):
 		self.handle = handle
 		self.is_gear = is_gear
-		super().__init__(name, wheels, speed, weight, mileage, color)
+		Vehicle.__init__(self, name, wheels, speed, weight, mileage, color)
 
 	def wheelie(self):
 		print("Bike is Doing a wheeeeeeelie!")

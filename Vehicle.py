@@ -22,5 +22,6 @@ class Vehicle():
 	def reverse(dist):
 		loc = loc-dist
 		print("Current location is : " + str(dist))
+
 	def stop():
 		print("All stop.")

@@ -2,11 +2,14 @@ from Vehicle import Vehicle
 from Truck import Truck
 from Bike import Bike
 from Car import Car
+from Atv import Atv
 
-bike = Bike(1, 5, "Harley-Davidson", 2 , 150 , 750 , 0 , "Orange")
-print(bike.wheelie())
-print(bike.name)
-ge
+atv = Atv(1, 2 , 6 , 1 , True, None , "Ducatti Monster", 2 , 150 , 750 , 0 , "Orange")
+atv.offroad()
+atv.wheelie()
+atv.drift()
+print(atv.name)
+
 
 
 

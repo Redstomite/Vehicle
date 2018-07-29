@@ -7,16 +7,16 @@ class Car(Vehicle):
 	has_belt = 0
 	has_audioplayer = None
 
-	def __init__(self, has_ac, has_strwheel, has_belt, has_audioplayer , name, wheels, speed, weight, mileage, color):
+	def __init__(self, has_ac, has_strwheel, has_belt, has_audioplayer, name, wheels, speed, weight, mileage, color):
 		self.has_ac = has_ac
 		self.has_strwheel = has_strwheel
 		self.has_belt = has_belt
 		self.has_audioplayer = has_audioplayer
-		super().__init__(name, wheels, speed, weight, mileage, color)
+		Vehicle.__init__(self, name, wheels, speed, weight, mileage, color)
 	
-	def drift():
+	def drift(self):
 		print("Drifting - Wheee!")
 
-	def deploy_airbags():
+	def deploy_airbags(self):
 		print("Crash!")
 
